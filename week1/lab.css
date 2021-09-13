@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+}
+p {
+  font-size: 24px;
+  border: 3px solid orange;
+  margin: 24px 0px;
+  width: 100%;
+}
+
+.content {
+  /* display: flex; */
+}
+.header {
+  background-color: grey;
+  color: white;
+  padding: 16px;
+}
+
+.content a {
+  /* border: 3px solid green; */
+}
+
+.btn {
+  padding: 100px;
+  margin-right: 12px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+/* .content {
+  display: flex;
+} */
