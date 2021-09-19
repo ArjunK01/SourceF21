@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  margin: 20px;
+}
+
+.tweet {
+  border: 2px solid #1da1f2;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.tweet-text {
+  flex-basis: 1;
+  word-wrap: break-word;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #657786;
+  padding: 12px;
+  color: white;
+}
