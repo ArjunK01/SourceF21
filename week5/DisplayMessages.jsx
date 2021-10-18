@@ -31,6 +31,7 @@ const DisplayMessage = () => {
 	); ///
 };
 
+// NOTE: separate your components into separate files!
 const Message = (props) => {
 	return (
 		<div>
