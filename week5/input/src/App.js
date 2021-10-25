@@ -1,29 +1,29 @@
 import React, { useState } from "react";
 
 function App() {
-  let [firstName, setFirstName] = useState("");
-  let [bio, setBio] = useState("");
-  let [people, setPeople] = useState([]);
+  const [firstName, setFirstName] = useState("");
+  const [bio, setBio] = useState("");
+  const [people, setPeople] = useState([]);
 
   return (
     <div>
       <input value={firstName} onChange={e => setFirstName(e.target.value)} />
       <input value={bio} onChange={e => setBio(e.target.value)} />
       <button
-        onClick={() =>
-          setPeople([...people, { firstName: firstName, bio: bio }])
-        }
+        onClick={() => {
+          setPeople([...people, { firstName: firstName, bio: bio }]);
+          setBio("");
+          setFirstName("");
+        }}
       >
-        Add Person to Array
+        Add person to people array
       </button>
-      <div>
-        <p>List of People: </p>
-        {people.map(person => (
-          <div>
-            {person.firstName}, {person.bio}
-          </div>
-        ))}
-      </div>
+
+      {people.map((person, i) => (
+        <p>
+          {person.firstName}, {person.bio}
+        </p>
+      ))}
     </div>
   );
 }

@@ -2,20 +2,10 @@ import React from "react";
 import Header from "./Components/Header.js";
 import Body from "./Components/Body.js";
 import Blog from "./Components/Blog.js";
+import { v4 as uuidv4 } from "uuid";
 
 const App = () => {
-  return (
-    <div>
-      <p class="paragraph"></p>
-      <Header />
-      <Body />
-      <Blog title={"NY TRIP"} content={"This is the blog for NY"} likes={20} />
-      <Blog 
-      title={"SF TRIP"} 
-      content={"Blog for SF"} 
-      likes={2} />
-    </div>
-  );
+  return <div>{uuidv4()}</div>;
 };
 
 export default App;

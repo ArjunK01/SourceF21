@@ -1,6 +1,8 @@
 * {
   margin: 0;
+  padding: 0;
 }
+
 p {
   font-size: 24px;
   border: 3px solid orange;
@@ -9,25 +11,25 @@ p {
 }
 
 .content {
-  /* display: flex; */
+  display: flex;
 }
 .header {
   background-color: grey;
   color: white;
-  padding: 16px;
+  padding: 16px;sammdan
 }
 
 .content a {
-  /* border: 3px solid green; */
+  border: 3px solid green;
 }
 
 .btn {
-  padding: 100px;
+  padding:50px;
   margin-right: 12px;
   background-color: black;
   color: white;
   text-decoration: none;
-  /* display: inline-block; */
+  display: inline-block
 }
 
 .btn:hover {
@@ -35,6 +37,11 @@ p {
   color: black;
   border: 1px solid black;
 }
+
+.btn-container {
+  display: inline
+}
+
 /* .content {
   display: flex;
 } */

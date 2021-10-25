@@ -7,13 +7,14 @@ function App() {
     <Router>
       <p>random paragraph</p>
       <Switch>
-        <Route path="/profile">
+        <Route exact path="/profile">
           <Profile />
         </Route>
-        <Route path="/">
+        <Route exact path="/">
           <div>
             <p>This is the home page</p>
             <Link to="/profile">Go to profile page!</Link>
+            <p>New Change</p>
           </div>
         </Route>
       </Switch>
