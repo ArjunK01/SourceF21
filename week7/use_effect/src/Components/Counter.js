@@ -2,22 +2,22 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Counter = () => {
-  let [agePrediction, setAgePrediction] = useState("");
+  const [count, setCount] = useState(0);
 
-  //   setTimeout(() => setCount(count + 1), 50);
+  // setTimeout(() => setCount(count + 2), 10);
 
-  //function with 2 parameters
-  //First parameter is a function you want to run
-  //Second paramter is an empty array to signify only running on the first render
   useEffect(() => {
-    //Code you want to run here
-    //Fetch the data from an api
-    axios.get("https://api.agify.io/?name=arjun").then(prediction => {
-      setAgePrediction(prediction.data.age);
-    });
+    setTimeout(() => {
+      setCount(100);
+    }, 2000);
   }, []);
 
-  return <div>{agePrediction}</div>;
+  return (
+    <div>
+      {count}
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </div>
+  );
 };
 
 export default Counter;
